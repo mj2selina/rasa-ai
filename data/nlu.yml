@@ -1,0 +1,69 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - 你好
+    - 哈喽
+    - 嗨
+    - 早上好
+    - 下午好
+
+- intent: goodbye
+  examples: |
+    - 再见
+    - 拜
+    - 拜拜
+    - 下次见
+
+- intent: affirm
+  examples: |
+    - 是的
+    - 对的
+    - 对
+    - 是
+    - 就是的
+    - 就是
+    - 就是这样
+
+- intent: deny
+  examples: |
+    - 不对
+    - 不是
+    - 不是这样
+    - 错了
+    - 错
+    - 我觉得不对
+
+- intent: mood_great
+  examples: |
+    - 太棒了
+    - 谢谢
+    - 太厉害了
+    - 太好了
+    - 很棒
+    - 很好
+    - 非常感谢
+
+- intent: mood_unhappy
+  examples: |
+    - 伤心
+    - 难过
+    - 不开心
+    - 我太难了
+    - 好难过
+    - 烦躁
+
+- intent: find_restaurant
+  examples: |
+    - 想吃日料
+    - 想吃泰国菜
+    - 想吃西餐
+    - 想吃川菜
+    - 想吃粤菜
+    - 想吃东北菜
+    - 想吃湖南菜
+
+- intent: bot_challenge
+  examples: |
+    - 你是一个聊天机器人吗？
