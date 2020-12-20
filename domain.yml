@@ -4,25 +4,40 @@ session_config:
 intents:
 - greet
 - find_restaurant
+- find_Japanese
 - goodbye
 - affirm
 - deny
 - mood_great
 - mood_unhappy
 - bot_challenge
+- find_Chuan
+
+entities:
+- cuisine
+
+slots:
+  cuisine:
+    type: text
+    influence_conversation: ture
+
 responses:
   utter_greet:
   - text: 你好
   utter_find_restaurant:
-  - text: 离您最近的是旋转寿司，请问可以吗？
+  - text: 请问您想吃什么菜呢？
+  utter_find_Japanese:
+  - text: 最近的日料是旋转寿司，请问满足您的需求吗？
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
   utter_did_that_help:
   - text: 请问需要帮助吗？
   utter_happy:
-  - text: 害羞嘿嘿
+  - text: 不客气
   utter_goodbye:
   - text: 拜拜
   utter_iamabot:
   - text: 我是一个聊天机器人
+  utter_find_Chuan:
+  - text: 最近的川菜是天成川菜馆，请问满足您的需求吗？

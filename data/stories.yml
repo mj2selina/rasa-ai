@@ -2,12 +2,31 @@ version: "2.0"
 
 stories:
 
-- story: find restaurant
+- story: Japanese cuisine
   steps:
   - intent: greet
   - action: utter_greet
   - intent: find_restaurant
   - action: utter_find_restaurant
+  - intent: find_Japanese
+  - action: utter_find_Japanese
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Chuan cuisine
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_restaurant
+  - action: utter_find_restaurant
+  - intent: find_Chuan
+  - action: utter_find_Chuan
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: happy path
   steps:

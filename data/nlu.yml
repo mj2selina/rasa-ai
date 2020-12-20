@@ -44,6 +44,9 @@ nlu:
     - 很棒
     - 很好
     - 非常感谢
+    - 好的，谢谢
+    - 可以
+    - 可以，谢谢
 
 - intent: mood_unhappy
   examples: |
@@ -56,13 +59,25 @@ nlu:
 
 - intent: find_restaurant
   examples: |
+    - 找个饭店
+    - 找个吃的地方
+    - 我好饿，想吃东西，你有什么介绍吗？
+    - 我饿了，介绍个吃的地方
+    - 我饿了，介绍个饭店
+    - 我饿了，找个饭店
+
+- intent: find_Japanese
+  examples: |
     - 想吃日料
-    - 想吃泰国菜
-    - 想吃西餐
+    - 想吃日本菜
+    - 日料
+    - 日本菜
+
+- intent: find_Chuan
+  examples: |
     - 想吃川菜
-    - 想吃粤菜
-    - 想吃东北菜
-    - 想吃湖南菜
+    - 想吃四川菜
+    - 川菜
 
 - intent: bot_challenge
   examples: |
