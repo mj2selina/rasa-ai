@@ -8,6 +8,8 @@ stories:
   - action: utter_greet
   - intent: find_restaurant
   - action: utter_find_restaurant
+  - intent: query_address
+  - action: action_query_address
   - intent: find_Japanese
   - action: utter_find_Japanese
   - intent: mood_great

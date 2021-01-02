@@ -68,10 +68,10 @@ nlu:
 
 - intent: find_Japanese
   examples: |
-    - 想吃日料
-    - 想吃日本菜
-    - 日料
-    - 日本菜
+    - 想吃[日料]{"entity":"cuisine"}
+    - 想吃[日本菜]{"entity":"cuisine"}
+    - [日料]{"entity":"cuisine"}
+    - [日本菜]{"entity":"cuisine"}
 
 - intent: find_Chuan
   examples: |
@@ -82,3 +82,16 @@ nlu:
 - intent: bot_challenge
   examples: |
     - 你是一个聊天机器人吗？
+
+- intent: query_address
+  examples: |
+    - 我在陈家祠
+    - 陈家祠
+    
+- lookup: "cuisine"
+  examples: |
+    - 日料
+    - 日本菜
+    - 川菜
+    - 四川菜
+    - 粤菜

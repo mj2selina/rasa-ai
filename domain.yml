@@ -4,6 +4,7 @@ session_config:
 intents:
 - greet
 - find_restaurant
+- query_address
 - find_Japanese
 - goodbye
 - affirm
@@ -15,19 +16,27 @@ intents:
 
 entities:
 - cuisine
+- address
+- restaurant
 
 slots:
   cuisine:
     type: text
     influence_conversation: ture
+  address:
+    type: text
+  restaurant:
+    type: text
 
 responses:
   utter_greet:
   - text: 你好
   utter_find_restaurant:
   - text: 请问您想吃什么菜呢？
+  #utter_query_address:
+  #- text: 请问您现在的位置是哪里？
   utter_find_Japanese:
-  - text: 最近的日料是旋转寿司，请问满足您的需求吗？
+  - text: 最近的日料是{restaurant}，请问满足您的需求吗？
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -41,3 +50,9 @@ responses:
   - text: 我是一个聊天机器人
   utter_find_Chuan:
   - text: 最近的川菜是天成川菜馆，请问满足您的需求吗？
+
+actions:
+  - action_query_address
+
+config:
+  store_entities_as_slots: true
