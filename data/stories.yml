@@ -7,11 +7,11 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: find_restaurant
-  - action: utter_find_restaurant
-  - intent: query_address
-  - action: action_query_address
-  - intent: find_Japanese
-  - action: utter_find_Japanese
+  - action: utter_find_restaurant/ask_cuisine
+  - intent: answer_cuisine
+  - action: utter_answer_cuisine
+  - intent: answer_address
+  - action: action_answer_restaurant
   - intent: mood_great
   - action: utter_happy
   - intent: goodbye
@@ -22,7 +22,8 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: find_restaurant
-  - action: utter_find_restaurant
+  - action: utter_find_restaurant/ask_cuisine
+  #- action: utter_find_restaurant/ask_address
   - intent: find_Chuan
   - action: utter_find_Chuan
   - intent: mood_great
