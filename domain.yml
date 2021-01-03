@@ -35,10 +35,6 @@ responses:
   - text: 你好
   utter_find_restaurant/ask_cuisine:
   - text: 好的，请问您想吃什么菜呢？
-  #utter_find_restaurant/ask_address:
-  #- text: 请问您现在的位置是哪里？
-  #utter_query_address:
-  #- text: 请问您现在的位置是哪里？
   utter_answer_cuisine:
   - text: 好的，请问您现在的位置是？
   utter_cheer_up:
